@@ -8,3 +8,8 @@ nav {
 body {
     margin: 0;
 }
+
+.myflex {
+    display: flex;
+    align-items: center;
+}
