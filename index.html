@@ -9,19 +9,81 @@
 <body>
     <nav>
         <p>68070188</p>
-        <h2>ITF Website</h2>
+        <h1>ITF Website</h1>
         <p>Week 14</p>
     </nav>
-    <div>
+    <div class="content">
         <div class="myflex">
-            <img src="https://www.bing.com/th/id/OIP.P90Hj46L0Tv-hKrhMZZehgHaHa?w=204&h=211&c=8&rs=1&qlt=90&o=6&cb=12&pid=3.1&rm=2" alt="itLogo">
-            <h1>ITF Simple Bank</h1>
+            <img src="picture1.webp" alt="a" height="100px">
+            <div>
+                <h1>ITF Simple Bank</h1>
+                <p>Welcome to my first HTML + CSS + JS website!</p>
+            </div>
         </div>
-        <h4>Welcome to my first HTML + CSS + JS website!</h4>
+        <textarea name="history" id="history"></textarea>
     </div>
-    <div>
-        Enter number: <input type = "number" id = "myinput" value = "0">
-        <button onclick="add()" >+1</button>
+    <div class="overview">
+        <div class="columnitem">
+            <h2>Account overview</h2>
+            <div class="myflex">
+                <img src="Cool.png" alt="b" height="100px">
+                <div>
+                    <h3>Account Information</h3>
+                    <p>Name: Sirin Pornpratan</p>
+                    <p>Type: Saving Account</p>
+                </div>
+            </div>
+            <div class="myflex">
+                <img src="panda.png" alt="b" height="100px">
+                <div>
+                    <h3>Balance Information</h3>
+                    <div class="myflex">Current account balance: <input type = "number" id = "currentacc" value = "0">
+                    </div>
+                    <div class="myflex">Current cash balance: <input type = "number" id = "currentcash" value = "0"></div>
+                    
+                    <button onclick="change()" >Change</button>
+                </div>
+            </div>
+            <div class="myflex">
+                <img src="Study.png" alt="b" height="100px">
+                <div>
+                    <h3>Bank Operation</h3>
+                    <div class="myflex">
+                        <select name="action" id="action">
+                        <option value="withdraw">Withdraw</option>
+                        <option value="deposit">Deposit</option>
+                    </select><input type = "number" id = "money" value = "0">
+                    </div>
+                    
+                    
+                    <button onclick="proceed()" >Proceed</button>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="columnitem">
+            <h2>Financial Tools</h2>
+                <div class="myflex">
+                <img src="gold.png" alt="b" height="100px">
+                <div>
+                    <h3>Currency Converter</h3>
+                    <div class="myflex">Input balance: <input type = "number" id = "inbalance" value = "0">
+                    </div>
+                    <div class="myflex">Output balance: <input type = "number" id = "outbalance" value = "0"></div>
+                    <div class="myflex">
+                        Input Currency: 
+                    <select name="currency" id="currency">
+                        <option value="USD">USD</option>
+                        <option value="THB">THB</option>
+                    </select>
+                    <button onclick="convert()" >Change</button>
+                </div>
+                    
+                </div>
+            </div>
+        </div>
+
     </div>
     <script src="script.js"></script>
 </body>
